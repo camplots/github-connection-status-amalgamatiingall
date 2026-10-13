@@ -315,3 +315,17 @@
  .ab-actions{flex-direction:column}
  .ab-btn{justify-content:center}
 }
+
+.functions{background:#f7f1e4;color:#111821;padding:0 7vw 8vw}
+.functions-inner{max-width:1200px;margin:0 auto;border-top:2px solid #111821;padding-top:clamp(40px,5vw,72px)}
+.functions h2{font-family:'Inter',Arial,sans-serif;font-size:clamp(26px,3.2vw,40px);line-height:1.05;letter-spacing:-.025em;font-weight:800;margin:0 0 14px;text-wrap:balance}
+.functions .ex-lead{margin-bottom:40px}
+.fn-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px;align-items:start}
+.fn-card{margin:0}
+.fn-img{display:block;border:2px solid #111821;aspect-ratio:4/3;overflow:hidden;line-height:0}
+.fn-img img{display:block;width:100%;height:100%;object-fit:cover;object-position:top left}
+.fn-img:focus-visible{outline:3px solid #2849c9;outline-offset:4px}
+.fn-card figcaption{display:flex;flex-direction:column;gap:8px;margin-top:28px;font-size:16px;line-height:1.5}
+.fn-tag{font-size:12px;font-weight:800;letter-spacing:.16em;color:#2849c9}
+.fn-card strong{font-size:20px;line-height:1.2;letter-spacing:-.02em;font-weight:800}
+@media(max-width:960px){.fn-grid{grid-template-columns:1fr;gap:44px}.fn-img{box-shadow:8px 8px 0 #111821!important}}
