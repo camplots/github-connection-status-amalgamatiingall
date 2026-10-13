@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Bowlby+One&display=swap');
 :root{--ink:#111821;--paper:#f7f1e4;--blue:#2849c9;--sun:#f8cd2a;--green:#78e6a0;--coral:#ef684b;--muted:#6b7280}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;overflow-x:hidden}
@@ -311,3 +311,9 @@ td:first-child{color:var(--ink)}
 .band.cream h2{color:var(--blue)}
 .band.cream p{color:var(--ink)}
 }
+
+.logo{position:relative;display:inline-block;flex:none;font-family:'Bowlby One','Inter',Arial,sans-serif;font-weight:400;line-height:1.1;letter-spacing:.01em;white-space:nowrap;padding:.1em .2em .25em .05em}
+.logo::before{content:attr(data-text);position:absolute;left:.05em;top:.1em;color:#000;-webkit-text-stroke:.24em #000;text-shadow:.1em .13em 0 #b44fd8,.1em .13em .35em #b44fd8aa;pointer-events:none}
+.logo .lw{position:relative;font-weight:400;letter-spacing:inherit;background:linear-gradient(180deg,#ffb90f 0%,#ff6a00 100%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+.logo .ldot,.logo .lb{display:none}
+.nav .logo{font-size:26px}.footer .logo{font-size:28px}@media (max-width:700px){.nav .logo{font-size:21px}.footer .logo{font-size:24px}}
