@@ -22,13 +22,80 @@
 .hero h1 .ln{display:block;white-space:nowrap}
 .hero h1{font-size:clamp(56px,8.4vw,132px);line-height:1.02}
 @media (max-width:700px){.hero h1{font-size:clamp(34px,10.4vw,68px)}}
+
+.device.flow-device{display:flex;flex-direction:column;gap:10px;height:auto;width:min(36vw,520px);padding:24px 26px 22px;background:#ede6d7;color:#110e2a;box-shadow:18px 18px 0 #110e2a}
+.flow-title{font-size:12px;font-weight:800;letter-spacing:.16em}
+.flow{display:block;width:100%;height:auto}
+.flow .sun{animation:flowSun 12s linear infinite}
+.flow .lvl{transform-box:fill-box;transform-origin:50% 100%;transform:scaleY(.6);animation:flowLvl 12s linear infinite}
+.flow .fd{offset-rotate:0deg;animation:flowMove 1.8s linear infinite}
+.flow .pA{offset-path:path('M88,78 Q130,92 172,120')}
+.flow .pB{offset-path:path('M92,60 C200,26 304,56 340,146');animation-duration:2.7s}
+.flow .pC{offset-path:path('M318,200 L265,200');animation-duration:1.4s}
+.flow .pD{offset-path:path('M64,200 L135,200');animation-duration:1.8s}
+.flow .flow-sun-on{animation:flowSunOn 12s linear infinite}
+.flow .flow-bat-on{opacity:0;animation:flowBatOn 12s linear infinite}
+.flow .flow-grid-on{opacity:0;animation:flowGridOn 12s linear infinite}
+.flow-cap{display:grid;min-height:42px;font-size:14px;line-height:1.3}
+.flow-cap span{grid-area:1/1;opacity:0}
+.flow-cap b{display:block;font-size:11px;letter-spacing:.16em;margin-bottom:2px}
+.flow-cap .c1{opacity:1;animation:flowC1 12s linear infinite}
+.flow-cap .c2{animation:flowC2 12s linear infinite}
+.flow-cap .c3{animation:flowC3 12s linear infinite}
+@keyframes flowMove{from{offset-distance:0%}to{offset-distance:100%}}
+@keyframes flowSun{0%{opacity:.25}8%,30%{opacity:1}40%,92%{opacity:.25}100%{opacity:.25}}
+@keyframes flowLvl{0%{transform:scaleY(.1)}33%{transform:scaleY(1)}66%{transform:scaleY(.3)}100%{transform:scaleY(.1)}}
+@keyframes flowSunOn{0%,30%{opacity:1}34%,94%{opacity:0}100%{opacity:1}}
+@keyframes flowBatOn{0%,34%{opacity:0}38%,62%{opacity:1}66%,100%{opacity:0}}
+@keyframes flowGridOn{0%,66%{opacity:0}70%,94%{opacity:1}98%,100%{opacity:0}}
+@keyframes flowC1{0%,28%{opacity:1}33%,94%{opacity:0}100%{opacity:1}}
+@keyframes flowC2{0%,30%{opacity:0}35%,61%{opacity:1}66%,100%{opacity:0}}
+@keyframes flowC3{0%,64%{opacity:0}69%,93%{opacity:1}98%,100%{opacity:0}}
+@media(max-width:760px){.device.flow-device{width:100%;height:auto;margin-top:45px;box-shadow:10px 10px 0 #110e2a}}
+@media(prefers-reduced-motion:reduce){.flow .sun,.flow .lvl,.flow .fd,.flow .flow-sun-on,.flow .flow-bat-on,.flow .flow-grid-on,.flow-cap span{animation:none!important}.flow .sun{opacity:1}.flow .fd{offset-distance:50%}}
 </style>
 </head>
 <body>
 <nav class="nav"><div class="logo" data-text="Watts Better"><span class="lw">Watts Better</span></div><div class="links"><a href="#explore">EXPLORE</a><a href="#verify">VERIFY</a><a href="#how">HOW IT WORKS</a><a href="/how-we-are-paid">HOW WE’RE PAID</a><a href="#start">START →</a></div></nav>
 <section class="hero"><div class="sun"></div><div class="house"></div><div class="roof"></div><div class="panels"> <i class="panel"></i><i class="panel"></i><i class="panel"></i><i class="panel"></i><i class="panel"></i><i class="panel"></i></div><div class="hero-copy"><h1><span class="ln">Solar, is it</span><span class="ln"><span class="sun-word">worth</span> it?</span></h1><p>Find out exactly what will be best, when it comes to solar/batteries for your home.</p><a class="button button-how" href="#how">How it Works</a></div><div class="scroll">SCROLL TO BEGIN ↓</div></section>
 <section class="statement"><div class="display">A QUOTE PROVIDES A PRICE, BUT WHAT'S THE BEST SOLUTION?</div><p>Understand what you’re comparing before you choose.</p></section>
-<section id="explore" class="chapter blue"><h2>WEIGH<br>OPTIONS</h2><p>See how your home uses energy, then explore what solar and batteries could change.</p><a href="/calculator" class="button">EXPLORE YOUR OPTIONS →</a><div class="device"><div class="sun-icon"></div><div class="house-icon"></div><div class="battery"></div></div></section>
+<section id="explore" class="chapter blue"><h2>WEIGH<br>OPTIONS</h2><p>See how your home uses energy, then explore what solar and batteries could change.</p><a href="/calculator" class="button">EXPLORE YOUR OPTIONS →</a><div class="device flow-device">
+<div class="flow-title">A DAY IN YOUR HOME</div>
+<svg class="flow" viewBox="0 0 400 290" role="img" aria-labelledby="flow-t flow-d">
+<title id="flow-t">Home energy flow</title>
+<desc id="flow-d">An animated example of how a home with solar and a battery uses energy across a day. At midday solar powers the home and charges the battery. In the evening the battery powers the home. Late at night the grid supplies the rest.</desc>
+<g class="flow-lines" fill="none" stroke="#110e2a" stroke-opacity=".22" stroke-width="3" stroke-dasharray="2 8" stroke-linecap="round">
+<path d="M88,78 Q130,92 172,120"/>
+<path d="M92,60 C200,26 304,56 340,146"/>
+<path d="M318,200 L265,200"/>
+<path d="M64,200 L135,200"/>
+</g>
+<g class="sun">
+<g stroke="#110e2a" stroke-width="3" stroke-linecap="round"><path d="M62 18v10M62 90v10M22 58h10M92 58h10M34 30l7 7M83 79l7 7M90 30l-7 7M41 79l-7 7"/></g>
+<circle cx="62" cy="58" r="22" fill="#f3f849" stroke="#110e2a" stroke-width="3"/>
+</g>
+<path d="M48 148 30 236M48 148 66 236M37 196H59M41 172H55M48 148V132M33 140H63" fill="none" stroke="#110e2a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="135,150 200,96 265,150 265,236 135,236" fill="#110e2a"/>
+<rect x="186" y="172" width="28" height="28" rx="3" fill="#febe79"/>
+<rect x="318" y="150" width="44" height="86" rx="7" fill="#ffffff" stroke="#110e2a" stroke-width="3"/>
+<rect x="332" y="142" width="16" height="8" rx="2" fill="#110e2a"/>
+<rect class="lvl" x="322" y="154" width="36" height="78" rx="4" fill="#7beeb4"/>
+<g class="flow-sun-on"><circle class="fd pA" r="5" cx="0" cy="0" fill="#f3f849" stroke="#110e2a" stroke-width="1.6" style="animation-delay:0s"/><circle class="fd pA" r="5" cx="0" cy="0" fill="#f3f849" stroke="#110e2a" stroke-width="1.6" style="animation-delay:-0.6s"/><circle class="fd pA" r="5" cx="0" cy="0" fill="#f3f849" stroke="#110e2a" stroke-width="1.6" style="animation-delay:-1.2s"/><circle class="fd pB" r="5" cx="0" cy="0" fill="#f3f849" stroke="#110e2a" stroke-width="1.6" style="animation-delay:0s"/><circle class="fd pB" r="5" cx="0" cy="0" fill="#f3f849" stroke="#110e2a" stroke-width="1.6" style="animation-delay:-0.9s"/><circle class="fd pB" r="5" cx="0" cy="0" fill="#f3f849" stroke="#110e2a" stroke-width="1.6" style="animation-delay:-1.8s"/></g>
+<g class="flow-bat-on"><circle class="fd pC" r="5" cx="0" cy="0" fill="#7beeb4" stroke="#110e2a" stroke-width="1.6" style="animation-delay:0s"/><circle class="fd pC" r="5" cx="0" cy="0" fill="#7beeb4" stroke="#110e2a" stroke-width="1.6" style="animation-delay:-0.45s"/><circle class="fd pC" r="5" cx="0" cy="0" fill="#7beeb4" stroke="#110e2a" stroke-width="1.6" style="animation-delay:-0.9s"/></g>
+<g class="flow-grid-on"><circle class="fd pD" r="5" cx="0" cy="0" fill="#ee438f" stroke="#110e2a" stroke-width="1.6" style="animation-delay:0s"/><circle class="fd pD" r="5" cx="0" cy="0" fill="#ee438f" stroke="#110e2a" stroke-width="1.6" style="animation-delay:-0.6s"/><circle class="fd pD" r="5" cx="0" cy="0" fill="#ee438f" stroke="#110e2a" stroke-width="1.6" style="animation-delay:-1.2s"/></g>
+<g font-family="inherit" font-weight="800" font-size="11" letter-spacing="1.2" fill="#110e2a" text-anchor="middle">
+<text x="62" y="118">SOLAR</text>
+<text x="200" y="258">HOME</text>
+<text x="340" y="258">BATTERY</text>
+<text x="48" y="258">GRID</text>
+</g>
+</svg>
+<div class="flow-cap" aria-hidden="true">
+<span class="c1"><b>MIDDAY</b> Solar runs the home and charges the battery.</span>
+<span class="c2"><b>EVENING</b> The battery takes over as the sun drops.</span>
+<span class="c3"><b>LATE NIGHT</b> The grid tops up what the battery can&rsquo;t.</span>
+</div>
+</div></section>
 <section class="chapter cream"><h2>SEE THE<br>FULL<br>PICTURE.</h2><p>See your energy use, your solar and battery options, and the questions to take to an installer.</p><a href="/the-report" class="button">SEE YOUR REPORT →</a><div class="report"><div class="logo" data-text="Watts Better"><span class="lw">Watts Better</span></div><div class="rule"></div><h3>YOUR ENERGY<br>REPORT</h3><div class="rule"></div><p style="font-size:12px;letter-spacing:.1em">SYSTEM DIRECTION</p><div class="badge">SOLAR + BATTERY-READY</div><div class="rule" style="margin-top:55px"></div><div class="rule"></div><div class="rule"></div></div></section>
 <section class="chapter yellow"><h2>COMPARING<br>QUOTES?</h2><p>Schedule a 15-minute call for open and honest advice.</p><a class="button" href="/contact-us">BOOK A 15-MINUTE CHAT →</a></section>
 <section class="split"><div><h2 class="display" style="font-size:clamp(50px,6vw,92px)">ONE INTRODUCTION,<br>ONLY IF REQUESTED.</h2><p style="font-size:19px;line-height:1.4">We do not sell your details to a network of installers. If you ask, we make one considered introduction — and only share the information you approve.</p><a class="button" style="margin-top:25px" href="/how-introductions-work">HOW INTRODUCTIONS WORK →</a></div><div class="visual"><div class="circle"></div><div class="inspector"></div></div></section>
