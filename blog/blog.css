@@ -184,6 +184,8 @@ tr:last-child td{border-bottom:none}
 .sources{list-style:none;padding:0;margin:0}
 .sources li{border-top:1px solid #11182114;padding:20px 0;font-size:17px;line-height:1.55;color:#111821cc}
 .sources li:last-child{border-bottom:1px solid #11182114}
+.sources a{color:inherit;text-decoration:underline;text-decoration-color:var(--sun);text-decoration-thickness:2px;text-underline-offset:4px}
+.sources a:hover{text-decoration-color:var(--blue)}
 
 .disclaimer{border-top:2px solid var(--ink);padding-top:28px;font-size:15px;line-height:1.65;color:var(--muted)}
 
