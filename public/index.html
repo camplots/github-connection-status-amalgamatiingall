@@ -53,6 +53,63 @@
 @keyframes flowC3{0%,64%{opacity:0}69%,93%{opacity:1}98%,100%{opacity:0}}
 @media(max-width:760px){.device.flow-device{width:100%;height:auto;margin-top:45px;box-shadow:10px 10px 0 #110e2a}}
 @media(prefers-reduced-motion:reduce){.flow .sun,.flow .lvl,.flow .fd,.flow .flow-sun-on,.flow .flow-bat-on,.flow .flow-grid-on,.flow-cap span{animation:none!important}.flow .sun{opacity:1}.flow .fd{offset-distance:50%}}
+
+/* palette roles: flat colours only */
+:root{--ink:#110e2a;--paper:#ede6d7;--muted:#110e2a}
+.hero{background:#110e2a;color:#ede6d7}
+.hero .sun{background:#f3f849;opacity:1}
+.hero .house{background:#ee438f}
+.hero .roof{background:#febe79}
+.hero .panel{border:2px solid #110e2a;background:repeating-linear-gradient(90deg,#f3f849 0 22%,#110e2a 23% 26%)}
+.hero h1 .sun-word{color:#febe79}
+.hero .button{background:#f3f849;color:#110e2a}
+.hero .button:hover{background:#ee438f;color:#110e2a}
+.nav{color:#ede6d7;border-bottom:1px solid #ede6d7}
+.nav .logo,.footer .logo{color:#ede6d7}
+.logo::before{text-shadow:.1em .13em 0 #ee438f}
+.logo .lw{background:none;color:#f3f849;-webkit-text-fill-color:#f3f849}
+.statement,.steps{background:#ede6d7;color:#110e2a}
+.statement p{color:#ee438f}
+.chapter.blue{background:#ee438f;color:#110e2a}
+.chapter.cream{background:#7beeb4;color:#110e2a}
+.chapter.yellow{background:#f3f849;color:#110e2a}
+.chapter.dark{background:#110e2a;color:#ede6d7}
+.transparency{background:#febe79;color:#110e2a}
+.split{background:#ede6d7;color:#110e2a}
+.split .visual{background:#febe79}
+.chapter .device.flow-device,.chapter .device{background:#ede6d7;color:#110e2a;box-shadow:18px 18px 0 #110e2a}
+.chapter .report{background:#ede6d7;color:#110e2a;box-shadow:18px 18px 0 #110e2a}
+.chapter.dark .button,.chapter.blue .button,.chapter.cream .button,.chapter.yellow .button,.transparency .button{background:#110e2a;color:#ede6d7}
+.chapter.dark .button{background:#ede6d7;color:#110e2a}
+.button:hover{background:#110e2a;color:#f3f849}
+.chapter.dark .button:hover{background:#f3f849;color:#110e2a}
+.badge{background:#7beeb4;color:#110e2a}
+.steps .step{border-top-color:#110e2a}
+.footer{background:#110e2a;color:#ede6d7}
+.footer-col h4{color:#febe79}
+.footer-col a{color:#ede6d7}
+.footer-col a:hover{color:#f3f849}
+.footer-brand p{color:#ede6d7}
+@media(max-width:760px){.chapter .device.flow-device{box-shadow:10px 10px 0 #110e2a}}
+@media (prefers-color-scheme: dark){
+ body{background:#110e2a;color:#ede6d7}
+ .statement,.steps,.split{background:#ede6d7;color:#110e2a}
+ .chapter.cream{background:#7beeb4;color:#110e2a}
+ .chapter .report,.chapter .device,.chapter .device.flow-device{background:#ede6d7;color:#110e2a}
+ .device .house-icon{background:#110e2a}
+ .button.button-how{color:#110e2a}
+}
+
+.footline{border-top:1px solid #ede6d7;color:#ede6d7}
+.footline a{text-decoration-color:#febe79}
+.footline a:hover{color:#f3f849}
+.footnav a,.fn-secondary a{color:#ede6d7}
+.fn-primary a{border:1px solid #ede6d7;color:#ede6d7}
+.fn-primary a:hover{background:#f3f849;color:#110e2a;border-color:#f3f849}
+.modal{background:#110e2a}
+.button.button-how{color:#ede6d7;border:2px solid #ede6d7;box-shadow:none}
+.button.button-how:hover{background:#f3f849;color:#110e2a;border-color:#f3f849}
+@media(max-width:760px){.nav{background:#110e2a;border-bottom:1px solid #ede6d7}}
 </style>
 </head>
 <body>
