@@ -1,21 +1,16 @@
-import { SiteHeader } from '@/components/site-header'
-import { Hero } from '@/components/hero'
-import { Foundations } from '@/components/foundations'
-import { Components } from '@/components/components-section'
-import './home.css'
+import { readFileSync } from "node:fs"
+import path from "node:path"
 
-export default function HomePage() {
+export default function Home() {
+  const source = readFileSync(path.join(process.cwd(), "public", "index.html"), "utf8")
+  const styles = source.match(/<style>([\s\S]*?)<\/style>/i)?.[1] ?? ""
+  const body = source.match(/<body[^>]*>([\s\S]*?)<\/body>/i)?.[1] ?? source
+  const content = body.replace(/<script[\s\S]*?<\/script>/gi, "")
+
   return (
     <>
-      <SiteHeader />
-      <main className="page">
-        <Hero />
-        <Foundations />
-        <Components />
-      </main>
-      <footer className="site-footer md-typescale-body-small">
-        Built with Material Web (@material/web) — Material Design 3 for the web.
-      </footer>
+      <style dangerouslySetInnerHTML={{ __html: styles }} />
+      <div dangerouslySetInnerHTML={{ __html: content }} />
     </>
   )
 }

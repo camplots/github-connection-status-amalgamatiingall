@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Watts Better — Solar, made clear.</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Bowlby+One&display=swap');
+:root{--ink:#111821;--paper:#f7f1e4;--blue:#2849c9;--sun:#f8cd2a;--green:#78e6a0;--coral:#ef684b;--muted:#6b7280}*{box-sizing:border-box}html{scroll-behavior:smooth;overflow-x:hidden;scroll-snap-type:y mandatory}section{scroll-snap-align:start}body{margin:0;background:var(--paper);font-family:'Inter',Arial,sans-serif;color:var(--ink);letter-spacing:-.025em;overflow-x:hidden;-webkit-font-smoothing:antialiased}.nav{height:88px;padding:0 4vw;display:flex;align-items:center;justify-content:space-between;position:absolute;top:0;width:100%;z-index:3;color:#fff;border-bottom:1px solid #ffffff55}.logo{display:flex;align-items:center;gap:.32em;font-family:'Inter',Arial,sans-serif;font-size:22px;line-height:1}.lw{font-weight:900;letter-spacing:.06em}.lb{font-weight:700;letter-spacing:-.01em}.ldot{flex:none;width:.26em;height:.26em;border-radius:50%;background:#e68c19}.nav .logo,.footer .logo{color:#e9edf6}.report .logo{color:var(--ink);font-size:16px}.footer{background:var(--ink);color:#fff;padding:64px 7vw 36px}.footer-grid{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:40px;margin:0 0 48px}.footer-col h4{font-family:'Inter',Arial,sans-serif;font-size:11px;letter-spacing:.14em;font-weight:700;color:#ffffff50;text-transform:uppercase;margin:0 0 18px}.footer-col a{display:block;font-size:14px;color:#ffffffaa;transition:color .2s;padding:4px 0}.footer-col a:hover{color:var(--sun)}.footer-brand{grid-column:1}.footer-brand .logo{margin-bottom:16px}.footer-brand p{font-size:14px;line-height:1.6;color:#ffffff66;max-width:260px}.footline{border-top:1px solid #ffffff12;padding-top:24px;display:flex;justify-content:space-between;align-items:center;gap:24px;font-size:13px;letter-spacing:.06em;font-weight:500;color:#ffffff50}.footline a{color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-color:#ffffff22;transition:color .2s}.footline a:hover{color:var(--sun)}.links{display:flex;gap:28px;font-size:13px;letter-spacing:.08em}.links a{color:inherit;text-decoration:none}.hero{min-height:100vh;position:relative;overflow:hidden;color:white;background:linear-gradient(145deg,#172541,#345979 47%,#efbd7c);scroll-snap-align:start}.sun{width:48vw;height:48vw;max-width:680px;max-height:680px;border-radius:50%;background:radial-gradient(circle at 42% 40%,#fff9c7 0 4%,#f8cd2a 16%,#ed8e51 53%,#487698 75%);position:absolute;right:-8vw;top:5vh;opacity:.95}.house{position:absolute;bottom:-2px;left:0;width:100%;height:46%;background:#101d2c;clip-path:polygon(0 42%,24% 0,49% 36%,71% 4%,100% 47%,100% 100%,0 100%)}.roof{position:absolute;width:37vw;height:8vw;background:#263e4e;bottom:27%;left:24%;transform:skewY(8deg)}.panels{position:absolute;left:31%;bottom:31%;display:flex;gap:5px;transform:skewY(8deg)}.panel{width:4vw;height:2.4vw;border:1px solid #80c3df;background:repeating-linear-gradient(90deg,#34769d 0 22%,#1e526f 23% 26%)}.hero-copy{position:relative;z-index:2;padding:29vh 7vw 12vh;max-width:860px}.eyebrow{font-size:12px;letter-spacing:.15em;font-weight:bold}.hero h1,.display{font-size:clamp(62px,9.3vw,150px);line-height:.83;margin:26px 0 32px;font-weight:900}.hero p{font-size:20px;line-height:1.35;max-width:500px;letter-spacing:-.02em}.button{border:0;border-radius:100px;padding:18px 25px;font-weight:800;font-size:13px;letter-spacing:.03em;text-decoration:none;display:inline-block;cursor:pointer;background:var(--ink);color:var(--paper);transition:background .2s}.button:hover{background:#1a2230}.yellow .button{background:var(--ink);color:var(--paper)}.hero .button{background:var(--sun);color:var(--ink);margin-top:28px}.hero .button:hover{background:#e6bd22}.scroll{position:absolute;bottom:28px;left:7vw;font-size:11px;letter-spacing:.15em}.statement{padding:12vw 7vw 11vw;background:var(--paper);min-height:80vh;display:flex;flex-direction:column;justify-content:center;scroll-snap-align:start}.statement .display{font-size:clamp(28px,4.9vw,76px);max-width:1060px;margin:0}.statement p{color:var(--blue);font-size:30px;font-weight:bold;margin:45px 0 0}.chapter{min-height:100vh;position:relative;overflow:hidden;padding:7vw;display:flex;flex-direction:column;justify-content:center;scroll-snap-align:start}.chapter .number{font-size:13px;letter-spacing:.16em;font-weight:bold}.chapter h2{font-size:clamp(52px,7vw,106px);line-height:.86;margin:30px 0;max-width:740px;font-weight:900}.chapter p{font-size:20px;line-height:1.35;max-width:510px}.blue{background:var(--blue);color:#fff}.dark{background:var(--ink);color:#fff}.cream{background:var(--paper)}.yellow{background:var(--sun)}.chapter .button{margin-top:28px}.device{position:absolute;right:9vw;bottom:9vw;width:min(34vw,500px);height:min(31vw,450px);border-radius:26px;background:#e9e1c9;padding:28px;color:var(--ink);box-shadow:18px 18px 0 #19339b}.device .sun-icon{width:70px;height:70px;border-radius:50%;background:var(--sun);margin:5px auto 38px}.device .house-icon{height:135px;background:var(--ink);clip-path:polygon(0 46%,50% 0,100% 46%,100% 100%,0 100%);position:relative}.device .battery{position:absolute;width:64px;height:112px;background:var(--green);right:25%;bottom:25px;border-radius:8px}.device .battery:before{content:"";position:absolute;width:24px;height:8px;top:-7px;left:20px;background:var(--green)}.report{position:absolute;right:9vw;bottom:8vw;width:min(31vw,440px);height:min(39vw,560px);background:#f5f2ea;color:var(--ink);padding:32px;box-shadow:18px 18px 0 var(--blue)}.report h3{font-size:36px;line-height:.92;margin:40px 0}.rule{height:2px;background:#a7a59d;margin:15px 0}.badge{display:inline-block;background:var(--green);padding:9px 12px;font-size:11px;font-weight:bold;letter-spacing:.08em}.split{display:grid;grid-template-columns:1fr 1fr;min-height:100vh;scroll-snap-align:start}.split>div{padding:8vw 7vw}.split .visual{background:linear-gradient(135deg,#d57a4a,#f5d185 51%,#31566c);position:relative;overflow:hidden}.visual .circle{position:absolute;width:46vw;height:46vw;border-radius:50%;background:#f4ebd2;right:-11vw;top:9vw}.visual .inspector{position:absolute;width:25vw;height:38vw;border-radius:50% 50% 10% 10%;background:#203e55;left:19%;bottom:-4%;transform:rotate(-8deg)}.steps{padding:9vw 7vw;background:var(--paper);min-height:100vh;display:flex;flex-direction:column;justify-content:center;scroll-snap-align:start}.steps h2{font-size:clamp(47px,7vw,100px);line-height:.88;max-width:900px;margin:0 0 70px;font-weight:900}.steps h2 .sig{display:inline-block;margin-top:.45em}.step-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}.step{border-top:3px solid var(--ink);padding-top:16px}.step b{font-size:13px;letter-spacing:.1em}.step h3{font-size:27px;line-height:.95;margin:28px 0 12px}.step p{font-size:15px;line-height:1.35}.transparency{padding:10vw 7vw;background:var(--sun);min-height:80vh;display:flex;flex-direction:column;justify-content:center;scroll-snap-align:start}.transparency h2{font-size:clamp(48px,6.5vw,98px);line-height:.87;margin:0;max-width:850px;font-weight:900}.transparency p{font-size:19px;line-height:1.4;max-width:720px;margin-top:35px}.footer{background:var(--ink);color:white;padding:8vw 7vw 35px}.footer h2{font-size:clamp(49px,7.4vw,110px);line-height:.84;max-width:800px;margin:0 0 45px;font-weight:900}.footer h2 span{display:inline-block}.footer h2.ladder{display:grid;grid-template-columns:auto auto;column-gap:.45em;line-height:.84;justify-content:start}.l-good{grid-column:2;grid-row:1;margin-left:0.6em}.l-watts{grid-column:1;grid-row:2}.l-better{grid-column:2;grid-row:2;color:#e68c19}.l-best{grid-column:2;grid-row:3;margin-left:0.6em}.footline{border-top:1px solid #ffffff50;margin-top:90px;padding-top:22px;display:flex;justify-content:space-between;font-size:12px;letter-spacing:.07em}.footline a{color:inherit}.footline a:hover{color:var(--sun)}.footnav{display:flex;flex-wrap:wrap;gap:14px 26px;margin:0 0 60px;font-size:12px;letter-spacing:.08em}.footnav a{color:#ffffffb3}.footnav a:hover{color:var(--sun)}.fn-primary{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 24px}.fn-primary a{border:1px solid #ffffff40;border-radius:100px;padding:12px 18px;font-size:12px;letter-spacing:.08em;color:#fff}.fn-primary a:hover{border-color:var(--sun);color:var(--sun)}.fn-secondary{display:flex;flex-wrap:wrap;gap:10px 24px;font-size:12px;letter-spacing:.08em}.fn-secondary a{color:#ffffffb3}.fn-secondary a:hover{color:var(--sun)}.modal{position:fixed;inset:0;background:#111821e8;display:none;z-index:10;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}.modalbox{background:var(--paper);width:min(760px,100%);padding:42px;position:relative}.close{position:absolute;right:25px;top:18px;background:transparent;border:0;font-size:30px;cursor:pointer}.modalbox h2{font-size:54px;line-height:.9;margin:10px 0 35px}.progress{height:4px;background:#d4cebd;margin-bottom:34px}.progress i{display:block;width:23%;height:100%;background:var(--blue)}label{display:block;font-weight:bold;margin:22px 0 9px}input,select{width:100%;padding:17px;border:2px solid var(--ink);border-radius:2px;background:#fff;font-size:17px}.options{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}.option{background:#fff;border:2px solid var(--ink);padding:16px 20px;font-weight:bold;cursor:pointer}.option.active{background:var(--sun)}.result{display:none;margin-top:28px;padding:25px;background:var(--blue);color:#fff}.result h3{font-size:33px;margin:0 0 12px}.small{font-size:12px;line-height:1.4;color:#eee}
+@media(max-width:760px){.nav{position:fixed;height:auto;min-height:76px;flex-wrap:wrap;padding:14px 4vw 8px;background:#111821;border-bottom:1px solid #ffffff33}section{scroll-margin-top:90px}.links{width:100%;max-width:100%;overflow-x:auto;flex-wrap:nowrap;white-space:nowrap;gap:20px;padding:8px 0 4px}.links a{flex:none}.hero-copy{padding:23vh 7vw}.hero h1{font-size:clamp(40px,11vw,68px)}.hero p{font-size:18px}.sun{width:85vw;height:85vw;right:-29vw}.chapter{min-height:100vh;padding:16vw 7vw}.chapter h2{font-size:clamp(34px,9.4vw,52px)}.chapter p{font-size:18px}.device,.report{position:relative;right:auto;bottom:auto;width:100%;height:300px;margin-top:55px;box-shadow:10px 10px 0 #19339b}.split{grid-template-columns:1fr}.split>div{padding:16vw 7vw}.split .visual{min-height:340px}.visual .circle{width:110vw;height:110vw}.visual .inspector{width:58vw;height:88vw}.step-grid{grid-template-columns:1fr 1fr}.step h3{font-size:22px}.footer-grid{grid-template-columns:1fr 1fr;gap:32px}.footer-brand{grid-column:1/-1}.footline{flex-direction:column;gap:12px;text-align:center}.nav .logo{font-size:18px}.footer .logo{font-size:22px}.statement{padding:19vw 7vw}.statement .display{font-size:clamp(28px,7.8vw,44px)}.statement p{font-size:22px}.steps h2,.transparency h2,.footer h2{font-size:clamp(32px,8.8vw,47px)}.modalbox{padding:34px 22px}.modalbox h2{font-size:clamp(30px,8.6vw,54px)}.report h3{font-size:28px}.nav .logo{font-size:18px}.footer .logo{font-size:22px}}
+@media (prefers-color-scheme: dark){body{background:#111821;color:#f7f1e4}.statement,.cream,.steps{background:#111821}.statement p{color:#93a5f5}.dark{background:#f7f1e4;color:#111821}.yellow,.transparency{color:#111821}.button,.badge{color:#111821}.step{border-top-color:#f7f1e4}.report,.device{background:#1b2430;color:#f7f1e4}.device .house-icon{background:#f7f1e4}.footer{background:#0b1017;color:#fff}.modalbox{background:#161d27;color:#f7f1e4}.close{color:#f7f1e4}.progress{background:#39424e}input,select{background:#0f151d;color:#f7f1e4;border-color:#f7f1e4}.option{background:#0f151d;color:#f7f1e4;border-color:#f7f1e4}.option.active{color:#111821}.small{color:#b9b4a6;font-size:15px;line-height:1.5}.footer-col a{color:#ffffffaa}.footer-col h4{color:#ffffff50}.footer-brand p{color:#ffffff66}}
+.button.button-how{background:transparent;color:#fff;border:2px solid #fff;padding:16px 34px;font-size:15px;font-weight:700;letter-spacing:.01em;text-transform:none;box-shadow:0 0 0 0 #ffffff55;transition:background .2s,color .2s,transform .2s}.button.button-how:hover{background:#fff;color:var(--ink);transform:translateY(-2px)}.button.button-how:focus-visible{outline:3px solid var(--sun);outline-offset:3px}@media (prefers-color-scheme: dark){.button.button-how{color:#fff}.button.button-how:hover{color:#111821}}
+
+.logo{position:relative;display:inline-block;flex:none;font-family:'Bowlby One','Inter',Arial,sans-serif;font-weight:400;line-height:1.1;letter-spacing:.01em;white-space:nowrap;padding:.1em .2em .25em .05em}
+.logo::before{content:attr(data-text);position:absolute;left:.05em;top:.1em;color:#000;-webkit-text-stroke:.24em #000;text-shadow:.1em .13em 0 #b44fd8,.1em .13em .35em #b44fd8aa;pointer-events:none}
+.logo .lw{position:relative;font-weight:400;letter-spacing:inherit;background:linear-gradient(180deg,#ffb90f 0%,#ff6a00 100%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+.logo .ldot,.logo .lb{display:none}
+.nav .logo{font-size:26px}.footer .logo{font-size:28px}@media (max-width:700px){.nav .logo{font-size:21px}.footer .logo{font-size:24px}}
+.nav .logo{font-size:40px;margin-left:3vw}
+.hero-copy{padding:20vh 7vw 12vh 12vw}
+.hero h1 .sun-word{color:#ff7a00}
+@media (max-width:700px){.nav .logo{font-size:28px;margin-left:2vw}.hero-copy{padding:17vh 7vw 12vh 10vw}}
+.hero h1 .ln{display:block;white-space:nowrap}
+.hero h1{font-size:clamp(56px,8.4vw,132px);line-height:1.02}
+@media (max-width:700px){.hero h1{font-size:clamp(34px,10.4vw,68px)}}
+
+.device.flow-device{display:flex;flex-direction:column;gap:10px;height:auto;width:min(36vw,520px);padding:24px 26px 22px;background:#e9e1c9;color:#111821;box-shadow:18px 18px 0 #19339b}
+.flow-title{font-size:12px;font-weight:800;letter-spacing:.16em}
+.flow{display:block;width:100%;height:auto}
+.flow .sun{animation:flowSun 12s linear infinite}
+.flow .lvl{transform-box:fill-box;transform-origin:50% 100%;transform:scaleY(.6);animation:flowLvl 12s linear infinite}
+.flow .fd{offset-rotate:0deg;animation:flowMove 1.8s linear infinite}
+.flow .pA{offset-path:path('M88,78 Q130,92 172,120')}
+.flow .pB{offset-path:path('M92,60 C200,26 304,56 340,146');animation-duration:2.7s}
+.flow .pC{offset-path:path('M318,200 L265,200');animation-duration:1.4s}
+.flow .pD{offset-path:path('M64,200 L135,200');animation-duration:1.8s}
+.flow .flow-sun-on{animation:flowSunOn 12s linear infinite}
+.flow .flow-bat-on{opacity:0;animation:flowBatOn 12s linear infinite}
+.flow .flow-grid-on{opacity:0;animation:flowGridOn 12s linear infinite}
+.flow-cap{display:grid;min-height:42px;font-size:14px;line-height:1.3}
+.flow-cap span{grid-area:1/1;opacity:0}
+.flow-cap b{display:block;font-size:11px;letter-spacing:.16em;margin-bottom:2px}
+.flow-cap .c1{opacity:1;animation:flowC1 12s linear infinite}
+.flow-cap .c2{animation:flowC2 12s linear infinite}
+.flow-cap .c3{animation:flowC3 12s linear infinite}
+@keyframes flowMove{from{offset-distance:0%}to{offset-distance:100%}}
+@keyframes flowSun{0%{opacity:.25}8%,30%{opacity:1}40%,92%{opacity:.25}100%{opacity:.25}}
+@keyframes flowLvl{0%{transform:scaleY(.1)}33%{transform:scaleY(1)}66%{transform:scaleY(.3)}100%{transform:scaleY(.1)}}
+@keyframes flowSunOn{0%,30%{opacity:1}34%,94%{opacity:0}100%{opacity:1}}
+@keyframes flowBatOn{0%,34%{opacity:0}38%,62%{opacity:1}66%,100%{opacity:0}}
+@keyframes flowGridOn{0%,66%{opacity:0}70%,94%{opacity:1}98%,100%{opacity:0}}
+@keyframes flowC1{0%,28%{opacity:1}33%,94%{opacity:0}100%{opacity:1}}
+@keyframes flowC2{0%,30%{opacity:0}35%,61%{opacity:1}66%,100%{opacity:0}}
+@keyframes flowC3{0%,64%{opacity:0}69%,93%{opacity:1}98%,100%{opacity:0}}
+@media(max-width:760px){.device.flow-device{width:100%;height:auto;margin-top:45px;box-shadow:10px 10px 0 #19339b}}
+@media(prefers-reduced-motion:reduce){.flow .sun,.flow .lvl,.flow .fd,.flow .flow-sun-on,.flow .flow-bat-on,.flow .flow-grid-on,.flow-cap span{animation:none!important}.flow .sun{opacity:1}.flow .fd{offset-distance:50%}}
+.statement p.lead{font-size:clamp(20px,1.9vw,28px);font-weight:600;line-height:1.5;max-width:820px;margin-top:40px}@media(max-width:760px){.statement p.lead{font-size:19px;margin-top:28px}}.statement.fault{min-height:0;padding:9vw 7vw 11vw;border-top:2px solid var(--ink,#111821)}.statement.fault .display{font-size:clamp(28px,4.2vw,64px)}@media(max-width:760px){.statement.fault{padding:14vw 7vw 16vw}.statement.fault .display{font-size:clamp(28px,7.8vw,44px)}}
+.proof{display:grid;grid-template-columns:repeat(4,1fr);background:var(--ink);color:var(--paper);padding:0 7vw;scroll-snap-align:start}
+.proof>div{padding:clamp(24px,3vw,44px) 24px clamp(24px,3vw,44px) 24px;border-left:1px solid #ffffff26}
+.proof>div:first-child{border-left:0;padding-left:0}
+.proof b{display:block;font-size:clamp(34px,4.4vw,64px);line-height:.95;letter-spacing:-.04em;font-weight:900;color:var(--sun)}
+.proof span{display:block;margin-top:12px;font-size:14px;line-height:1.45;color:#f7f1e4cc;max-width:28ch}
+@media(max-width:760px){.proof{grid-template-columns:1fr 1fr}.proof>div{padding:22px 14px 22px 0;border-left:0;border-top:1px solid #ffffff26}.proof>div:nth-child(-n+2){border-top:0}.proof>div:nth-child(even){padding-left:16px;border-left:1px solid #ffffff26}.proof b{font-size:34px}}
+@media(min-width:761px){
+html{scroll-snap-type:y proximity}
+.problem{display:grid;grid-template-columns:1fr 1fr;background:var(--paper)}
+.problem .statement{min-height:0;padding:6vw 5vw 6vw 7vw;justify-content:flex-start}
+.problem .statement.fault{padding:6vw 7vw 6vw 5vw;border-top:0;border-left:2px solid var(--ink)}
+.problem .statement .display,.problem .statement.fault .display{font-size:clamp(26px,3.2vw,50px);line-height:.95;max-width:none}
+.problem .statement p.lead{font-size:clamp(17px,1.4vw,21px);line-height:1.55;margin-top:24px;max-width:none}
+.chapter{min-height:0;padding:6vw 7vw;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);grid-template-rows:auto auto auto 1fr;column-gap:6vw;align-content:center;align-items:start}
+.chapter>*{grid-column:1}
+.chapter>.device,.chapter>.report{grid-column:2;grid-row:1/span 4;position:relative;right:auto;bottom:auto;width:100%;max-width:520px;justify-self:end;align-self:center}
+.chapter>.report{height:auto;min-height:340px;max-width:420px}
+.chapter>.device.flow-device{width:100%;max-width:520px}
+.chapter>.button{justify-self:start}
+.chapter h2{font-size:clamp(40px,5vw,76px);margin:14px 0 20px;max-width:none}
+.chapter p{max-width:520px}
+.chapter.yellow,#start{padding:4.5vw 7vw;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);grid-template-rows:auto auto;align-items:center}
+.chapter.yellow>h2,#start>h2{grid-row:1/span 2;margin:0}
+.chapter.yellow>p,#start>p,.chapter.yellow>.button,#start>.button{grid-column:2;margin:0}
+.chapter.yellow>.button,#start>.button{margin-top:20px}
+#start>.number{grid-row:1;grid-column:1;margin-bottom:8px}
+#start>h2{grid-row:2/span 2}
+.split{min-height:0}
+.split>div:first-child{padding:6vw 5vw 6vw 7vw;align-self:center}
+.split .visual{min-height:clamp(380px,34vw,520px)}
+.split .display{font-size:clamp(36px,4.6vw,68px)!important;line-height:.9}
+.steps{min-height:0;padding:6vw 7vw}
+.steps h2{font-size:clamp(34px,4.6vw,68px);margin:0 0 40px;max-width:none}
+.transparency{min-height:0;padding:6vw 7vw;display:grid;grid-template-columns:1fr 1fr;column-gap:6vw;align-content:center;justify-content:stretch}
+.transparency .number{grid-column:1/-1}
+.transparency h2{grid-column:1;grid-row:2/span 2;font-size:clamp(36px,4.6vw,68px);margin:12px 0 0}
+.transparency p{grid-column:2;margin:12px 0 0;font-size:19px}
+}
+
+.stage{background:var(--paper);color:var(--ink);padding:14vw 7vw;display:flex;flex-direction:column;gap:40px;scroll-snap-align:start}
+.stage .number{margin:0 0 14px;color:var(--blue);font-size:13px;font-weight:800;letter-spacing:.16em}
+.stage h2{font-size:clamp(34px,9.4vw,52px);line-height:.92;letter-spacing:-.03em;font-weight:900;margin:0 0 24px;text-wrap:balance}
+.stage p{font-size:18px;line-height:1.5;margin:0 0 16px;max-width:520px}
+.stage p.stage-key{font-weight:800;margin-bottom:0}
+.stage-fig{margin:0}
+.stage-img{display:block;border:2px solid var(--ink);box-shadow:8px 8px 0 var(--ink);background:var(--ink);line-height:0}
+.stage-img:focus-visible{outline:3px solid var(--blue);outline-offset:4px}
+.stage-img img{display:block;width:100%;height:auto}
+.stage-fig figcaption{margin-top:28px;font-size:14px;line-height:1.5;color:var(--muted)}
+@media(min-width:761px){
+.stage{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);column-gap:6vw;align-items:center;padding:7vw}
+.stage h2{font-size:clamp(40px,4.4vw,68px)}
+.stage p{font-size:19px}
+.stage-img{box-shadow:12px 12px 0 var(--ink)}
+.stage-fig figcaption{margin-top:32px;font-size:15px}
+}
+.stage-model{background:var(--ink);color:var(--paper)}
+.stage-model .number{color:var(--sun)}
+.stage-model .stage-img{border-color:var(--paper);box-shadow:8px 8px 0 var(--blue);background:var(--paper)}
+.stage-model .stage-fig figcaption{color:#f7f1e4b3}
+.stage-portal{background:var(--sun)}
+.stage-portal .number{color:var(--ink)}
+.stage-portal .stage-img{background:var(--paper);box-shadow:8px 8px 0 var(--ink)}
+.stage-portal .stage-fig figcaption{color:var(--ink)}
+@media(min-width:761px){
+.stage-model{grid-template-columns:minmax(0,1fr);row-gap:48px;justify-items:center}
+.stage-model .stage-copy{width:100%;max-width:1080px}
+.stage-model .stage-copy h2{font-size:clamp(36px,4vw,60px);max-width:16em}
+.stage-portal .stage-copy h2{font-size:clamp(30px,3.1vw,46px);line-height:.98}
+.stage-portal .stage-copy{align-self:center}
+.stage-model .stage-copy h2{max-width:none}
+.stage-model .stage-copy p{max-width:640px}
+.stage-model .stage-fig{width:100%;max-width:1080px}
+.stage-model .stage-img{box-shadow:12px 12px 0 var(--blue)}
+.stage-portal{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr)}
+.stage-portal .stage-fig{grid-column:1;grid-row:1}
+.stage-portal .stage-copy{grid-column:2;grid-row:1}
+.stage-portal .stage-img{box-shadow:12px 12px 0 var(--ink)}
+.stage-compare{grid-template-columns:minmax(0,1fr);row-gap:48px;justify-items:center}
+.stage-compare .stage-copy{width:100%;max-width:1080px}
+.stage-compare .stage-copy h2{font-size:clamp(34px,3.8vw,56px);max-width:18em}
+.stage-compare .stage-copy p{max-width:640px}
+.stage-compare .stage-fig{width:100%;max-width:1080px}
+}
+.stage-flow{background:var(--blue);color:var(--paper)}
+.stage-flow .number{color:var(--sun)}
+.stage-flow h2{max-width:none}
+.flow-player{margin:0}
+.flow-frame{position:relative;border:2px solid var(--paper);box-shadow:8px 8px 0 var(--sun);background:var(--ink);line-height:0}
+.flow-frame video{display:block;width:100%;height:auto;aspect-ratio:1440/1056}
+.flow-toggle{position:absolute;left:12px;bottom:12px;display:inline-flex;align-items:center;gap:8px;padding:10px 16px;font-family:inherit;font-size:12px;font-weight:800;line-height:1;letter-spacing:.12em;text-transform:uppercase;background:var(--ink);color:var(--paper);border:2px solid var(--ink);cursor:pointer;transition:transform .15s,background .15s,color .15s}
+.flow-toggle:hover{background:var(--sun);color:var(--ink);transform:translate(-2px,-2px)}
+.flow-toggle:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.flow-toggle .ic-pause{display:none}
+.flow-toggle.is-playing .ic-play{display:none}
+.flow-toggle.is-playing .ic-pause{display:inline}
+.flow-notes{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.flow-notes li{display:grid;grid-template-columns:44px 1fr;gap:14px;padding:20px 0;border-top:2px solid #f7f1e44d;font-size:16px;line-height:1.5}
+.flow-notes span{font-weight:900;font-size:34px;line-height:1;letter-spacing:-.04em;color:var(--sun)}
+.flow-notes strong{display:block;font-size:18px;line-height:1.2;letter-spacing:-.02em;font-weight:800;margin-bottom:6px}
+.flow-notes p{margin:0;color:#f7f1e4d9}
+.stage .flow-key{margin:0;font-size:14px;line-height:1.5;color:#f7f1e4b3;max-width:760px}
+@media(min-width:761px){
+.stage-flow{grid-template-columns:minmax(0,1fr);row-gap:48px;justify-items:center}
+.stage-flow .stage-copy,.stage-flow .flow-player,.stage-flow .flow-notes,.stage-flow .flow-key{width:100%;max-width:1080px}
+.stage-flow .stage-copy h2{font-size:clamp(30px,3.4vw,50px);line-height:1;max-width:22em}
+.flow-frame{box-shadow:12px 12px 0 var(--sun)}
+.flow-notes{grid-template-columns:repeat(3,minmax(0,1fr));column-gap:32px}
+.stage .flow-key{font-size:15px}
+}
+.stage .flow-notes p{font-size:16px;line-height:1.5;margin:0;max-width:none}
+.stage-intro{background:var(--ink);color:var(--paper);gap:28px}
+.stage-intro .number{color:var(--sun)}
+.stage-intro h2{margin:0;max-width:none}
+.stage-intro .intro-body p{margin:0;font-size:20px;line-height:1.5;font-weight:700;max-width:520px;padding-left:16px;border-left:4px solid var(--sun)}
+@media(min-width:761px){
+.stage-intro{padding:5vw 7vw;column-gap:6vw;align-items:end;grid-template-columns:minmax(0,1.3fr) minmax(0,.9fr)}
+.stage-intro h2{font-size:clamp(32px,3.8vw,58px);line-height:.98}
+.stage-intro .intro-body p{font-size:21px}
+}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="logo" data-text="Watts Better"><span class="lw">Watts Better</span></div><div class="links"><a href="#explore">EXPLORE</a><a href="#verify">VERIFY</a><a href="#how">HOW IT WORKS</a><a href="/how-we-are-paid">HOW WE’RE PAID</a><a href="#start">START →</a></div></nav>
+<section class="hero"><div class="sun"></div><div class="house"></div><div class="roof"></div><div class="panels"> <i class="panel"></i><i class="panel"></i><i class="panel"></i><i class="panel"></i><i class="panel"></i><i class="panel"></i></div><div class="hero-copy"><h1><span class="ln">Solar, is it</span><span class="ln"><span class="sun-word">worth</span> it?</span></h1><p>Find out exactly what will be best, when it comes to solar/batteries for your home.</p><a class="button button-how" href="#how">How it Works</a></div><div class="scroll">SCROLL TO BEGIN ↓</div></section><section id="step-1" class="stage" aria-labelledby="step-1-h"><div class="stage-copy"><p class="number">STEP 1</p><h2 id="step-1-h">Capturing your home&rsquo;s energy profile</h2><p>Higher resolution data provides opportunity for more accurate results. Request interval data through the Calculator if you prefer the greatest accuracy. Next best is Time of Use, but we can still work with a simple flat rate structured bill.</p><p>Any existing solar should be detailed as well, along with any Controlled Load.</p><p class="stage-key">The easiest way to capture this is to simply upload one of your bills.</p></div><figure class="stage-fig"><a class="stage-img" href="/images/example-bill-breakdown.png" target="_blank" rel="noopener"><img src="/images/example-bill-breakdown.png" width="2400" height="1476" loading="lazy" alt="Dashboard showing a quarterly bill of 234 dollars split into peak, shoulder, off-peak and supply charge, an hourly cost bar chart peaking at 6pm, and four cards on the battery case."></a><figcaption>This is an example household&rsquo;s energy profile, captured from a bill.</figcaption></figure></section><section id="step-2" class="stage stage-model" aria-labelledby="step-2-h"><div class="stage-copy"><p class="number">STEP 2</p><h2 id="step-2-h">Model your own system combinations and optimise the solution</h2><p>Move the solar and battery sliders and watch the day, the bill and the savings change. Jump straight to the greatest independence, highest savings or fastest break-even.</p></div><figure class="stage-fig"><a class="stage-img" href="/images/function-model-system.png" target="_blank" rel="noopener"><img src="/images/function-model-system.png" width="1818" height="1512" loading="lazy" alt="Modeling Your Home's Energy screen with solar and battery size sliders, a chart of energy flows through the day, the quarterly bill and estimated savings, and three ranked options."></a><figcaption>Sample numbers, shown from an early version of the tool.</figcaption></figure></section><section id="portal" class="stage stage-portal" aria-labelledby="portal-h"><div class="stage-copy"><p class="number">YOUR PORTAL</p><h2 id="portal-h">Build your portal with the tools and resources relevant to your stage of the journey</h2><p>Tools, guides and independent articles gathered in one place, matched to where you are in the decision.</p></div><figure class="stage-fig"><a class="stage-img" href="/images/function-portal.png" target="_blank" rel="noopener"><img src="/images/function-portal.png" width="1222" height="890" loading="lazy" alt="Portal screen with an Independent Report guide card, a Battery Comparisons tool card and a Knowledge carousel of guides on batteries and Queensland rebates."></a><figcaption>Sample numbers, shown from an early version of the tool.</figcaption></figure></section><section id="compare" class="stage stage-compare" aria-labelledby="compare-h"><div class="stage-copy"><p class="number">COMPARE BATTERIES</p><h2 id="compare-h">Compare batteries and detail preferences after taking into account compatibility with wholesale plans, expandability, warranty and price</h2><p>Pick two to four batteries for a side-by-side spec table.</p></div><figure class="stage-fig"><a class="stage-img" href="/images/function-compare-batteries.png" target="_blank" rel="noopener"><img src="/images/function-compare-batteries.png" width="2802" height="1270" loading="lazy" alt="Find the right home battery screen with a search box, brand filters and cards for the Sigenergy SigenStor, Tesla Powerwall 3 and PowerPlus Energy Whispr, with a comparison panel on the right."></a><figcaption>Sample numbers, shown from an early version of the tool.</figcaption></figure></section><section id="flow" class="stage stage-flow" aria-labelledby="flow-h"><div class="stage-copy"><p class="number">A TYPICAL DAY</p><h2 id="flow-h">Select one of the recommended system combinations and model it across 24 hours to see what a typical day looks like with the system installed on your home, with your energy profile</h2></div><figure class="flow-player"><div class="flow-frame"><video id="flow-video" muted loop playsinline preload="metadata" poster="/videos/home-energy-flow-poster.jpg" width="1440" height="1056" aria-label="Screen recording of the Home Energy Flow screen, showing solar, battery, home and grid energy moving through a day."><source src="/videos/home-energy-flow.mp4" type="video/mp4"></video><button class="flow-toggle" id="flow-toggle" type="button" aria-label="Play video"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path class="ic-play" d="M7 4.5v15l13-7.5z" fill="currentColor"/><path class="ic-pause" d="M6 4h4v16H6zM14 4h4v16h-4z" fill="currentColor"/></svg><span class="flow-toggle-text">Play</span></button></div></figure><ol class="flow-notes"><li><span>1</span><div><strong>Solar fills the house first</strong><p>From about 7:30am the panels start producing, and the home runs on solar before anything else.</p></div></li><li><span>2</span><div><strong>Spare solar charges the battery, then goes to the grid</strong><p>Once the battery is full, the surplus is sold back. The tally on the right keeps count.</p></div></li><li><span>3</span><div><strong>After sunset the battery takes over</strong><p>The home runs on stored energy instead of buying from the grid.</p></div></li></ol><p class="flow-key">Each moving token is exactly 1 kWh. Striped lines show where energy is flowing right now, and one second of video is about 16 minutes of the day. Sample numbers.</p><script>(function(){var v=document.getElementById('flow-video'),b=document.getElementById('flow-toggle');if(!v||!b)return;var t=b.querySelector('.flow-toggle-text');function sync(){var p=!v.paused;b.classList.toggle('is-playing',p);b.setAttribute('aria-label',p?'Pause video':'Play video');t.textContent=p?'Pause':'Play'}function play(){var r=v.play();if(r&&r.catch)r.catch(sync)}b.addEventListener('click',function(){v.dataset.userPaused=v.paused?'':'1';v.paused?play():v.pause()});v.addEventListener('play',sync);v.addEventListener('pause',sync);var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;if('IntersectionObserver'in window&&!reduce){new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){if(v.paused&&!v.dataset.userPaused)play()}else if(!v.paused){v.pause()}})},{threshold:.4}).observe(v)}sync()})();</script></section><section id="introductions" class="stage stage-intro" aria-labelledby="introductions-h"><div class="stage-copy"><p class="number">INTRODUCTIONS</p><h2 id="introductions-h">After reviewing your results, you may decide that you would like to speak with an installer.</h2></div><div class="intro-body"><p>If so, Watts Better can help arrange one introduction and only share the information you specifically approve.</p></div></section>
+<div class="problem"><section class="statement"><div class="display">A QUOTE PROVIDES A PRICE, BUT WHAT'S THE BEST SOLUTION?</div><p class="lead">Most homeowners never really find out. They get a quote, see a payback period that sounds reasonable, and sign &mdash; without knowing whether a different system size, a battery, or simply a better electricity plan would have saved them more.</p></section><section class="statement fault"><div class="display">THAT&rsquo;S NOT REALLY THEIR FAULT.</div><p class="lead">The software available to the solar industry doesn&rsquo;t properly calculate savings even for a single system &mdash; let alone compare hundreds of possible combinations. So consumers end up confused, comparing quotes they have no reliable way to check.</p></section></div><section class="proof" aria-label="Key facts"><div><b>62.28%</b><span>of inspected battery systems rated substandard in the Clean Energy Regulator&rsquo;s results</span></div><div><b>100s</b><span>of system combinations modelled for your home, not one quote</span></div><div><b>7 yrs</b><span>working as a solar consultant, across 1,000s of appointments</span></div><div><b>$0</b><span>extra for the independent inspection if you proceed with an introduced installer</span></div></section>
+<section id="explore" class="chapter blue"><h2>WEIGH<br>OPTIONS</h2><p>See how your home uses energy, then explore what solar and batteries could change.</p><a href="/calculator" class="button">EXPLORE YOUR OPTIONS →</a><div class="device flow-device">
+<div class="flow-title">A DAY IN YOUR HOME</div>
+<svg class="flow" viewBox="0 0 400 290" role="img" aria-labelledby="flow-t flow-d">
+<title id="flow-t">Home energy flow</title>
+<desc id="flow-d">An animated example of how a home with solar and a battery uses energy across a day. At midday solar powers the home and charges the battery. In the evening the battery powers the home. Late at night the grid supplies the rest.</desc>
+<g class="flow-lines" fill="none" stroke="#111821" stroke-opacity=".22" stroke-width="3" stroke-dasharray="2 8" stroke-linecap="round">
+<path d="M88,78 Q130,92 172,120"/>
+<path d="M92,60 C200,26 304,56 340,146"/>
+<path d="M318,200 L265,200"/>
+<path d="M64,200 L135,200"/>
+</g>
+<g class="sun">
+<g stroke="#111821" stroke-width="3" stroke-linecap="round"><path d="M62 18v10M62 90v10M22 58h10M92 58h10M34 30l7 7M83 79l7 7M90 30l-7 7M41 79l-7 7"/></g>
+<circle cx="62" cy="58" r="22" fill="#f8cd2a" stroke="#111821" stroke-width="3"/>
+</g>
+<path d="M48 148 30 236M48 148 66 236M37 196H59M41 172H55M48 148V132M33 140H63" fill="none" stroke="#111821" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="135,150 200,96 265,150 265,236 135,236" fill="#111821"/>
+<rect x="186" y="172" width="28" height="28" rx="3" fill="#ef684b"/>
+<rect x="318" y="150" width="44" height="86" rx="7" fill="#ffffff" stroke="#111821" stroke-width="3"/>
+<rect x="332" y="142" width="16" height="8" rx="2" fill="#111821"/>
+<rect class="lvl" x="322" y="154" width="36" height="78" rx="4" fill="#78e6a0"/>
+<g class="flow-sun-on"><circle class="fd pA" r="5" cx="0" cy="0" fill="#f8cd2a" stroke="#111821" stroke-width="1.6" style="animation-delay:0s"/><circle class="fd pA" r="5" cx="0" cy="0" fill="#f8cd2a" stroke="#111821" stroke-width="1.6" style="animation-delay:-0.6s"/><circle class="fd pA" r="5" cx="0" cy="0" fill="#f8cd2a" stroke="#111821" stroke-width="1.6" style="animation-delay:-1.2s"/><circle class="fd pB" r="5" cx="0" cy="0" fill="#f8cd2a" stroke="#111821" stroke-width="1.6" style="animation-delay:0s"/><circle class="fd pB" r="5" cx="0" cy="0" fill="#f8cd2a" stroke="#111821" stroke-width="1.6" style="animation-delay:-0.9s"/><circle class="fd pB" r="5" cx="0" cy="0" fill="#f8cd2a" stroke="#111821" stroke-width="1.6" style="animation-delay:-1.8s"/></g>
+<g class="flow-bat-on"><circle class="fd pC" r="5" cx="0" cy="0" fill="#78e6a0" stroke="#111821" stroke-width="1.6" style="animation-delay:0s"/><circle class="fd pC" r="5" cx="0" cy="0" fill="#78e6a0" stroke="#111821" stroke-width="1.6" style="animation-delay:-0.45s"/><circle class="fd pC" r="5" cx="0" cy="0" fill="#78e6a0" stroke="#111821" stroke-width="1.6" style="animation-delay:-0.9s"/></g>
+<g class="flow-grid-on"><circle class="fd pD" r="5" cx="0" cy="0" fill="#2849c9" stroke="#111821" stroke-width="1.6" style="animation-delay:0s"/><circle class="fd pD" r="5" cx="0" cy="0" fill="#2849c9" stroke="#111821" stroke-width="1.6" style="animation-delay:-0.6s"/><circle class="fd pD" r="5" cx="0" cy="0" fill="#2849c9" stroke="#111821" stroke-width="1.6" style="animation-delay:-1.2s"/></g>
+<g font-family="inherit" font-weight="800" font-size="11" letter-spacing="1.2" fill="#111821" text-anchor="middle">
+<text x="62" y="118">SOLAR</text>
+<text x="200" y="258">HOME</text>
+<text x="340" y="258">BATTERY</text>
+<text x="48" y="258">GRID</text>
+</g>
+</svg>
+<div class="flow-cap" aria-hidden="true">
+<span class="c1"><b>MIDDAY</b> Solar runs the home and charges the battery.</span>
+<span class="c2"><b>EVENING</b> The battery takes over as the sun drops.</span>
+<span class="c3"><b>LATE NIGHT</b> The grid tops up what the battery can&rsquo;t.</span>
+</div>
+</div></section>
+<section class="chapter cream"><h2>SEE THE<br>FULL<br>PICTURE.</h2><p>See your energy use, your solar and battery options, and the questions to take to an installer.</p><a href="/the-report" class="button">SEE YOUR REPORT →</a><div class="report"><div class="logo" data-text="Watts Better"><span class="lw">Watts Better</span></div><div class="rule"></div><h3>YOUR ENERGY<br>REPORT</h3><div class="rule"></div><p style="font-size:12px;letter-spacing:.1em">SYSTEM DIRECTION</p><div class="badge">SOLAR + BATTERY-READY</div><div class="rule" style="margin-top:55px"></div><div class="rule"></div><div class="rule"></div></div></section>
+<section class="chapter yellow"><h2>COMPARING<br>QUOTES?</h2><p>Schedule a 15-minute call for open and honest advice.</p><a class="button" href="/contact-us">BOOK A 15-MINUTE CHAT →</a></section>
+<section class="split"><div><h2 class="display" style="font-size:clamp(50px,6vw,92px)">ONE INTRODUCTION,<br>ONLY IF REQUESTED.</h2><p style="font-size:19px;line-height:1.4">We do not sell your details to a network of installers. If you ask, we make one considered introduction — and only share the information you approve.</p><a class="button" style="margin-top:25px" href="/how-introductions-work">HOW INTRODUCTIONS WORK →</a></div><div class="visual"><div class="circle"></div><div class="inspector"></div></div></section>
+<section id="verify" class="chapter dark"><h2>DON’T HOPE.<br>INSIST.</h2><p>Watts Better arranges an independent inspection to assess the compliance, workmanship, safety, and functioning of your installation — then delivers the report to you.</p><a href="/installation-inspections" class="button" style="background:var(--green)">HOW THE INSPECTION WORKS →</a><div class="report" style="box-shadow:18px 18px 0 var(--green)"><div class="logo" data-text="Watts Better"><span class="lw">Watts Better</span></div><div class="rule"></div><h3>INSTALLATION<br>INSPECTION<br>REPORT</h3><div class="rule"></div><p style="font-size:12px;letter-spacing:.1em">SYSTEM STATUS</p><div class="badge">INDEPENDENTLY ASSESSED</div></div></section>
+<section id="how" class="steps"><h2>COMPREHENSIVE<br>SYSTEM INSPECTIONS. STANDARD.<br><span class="sig">WATTS. <span style="color:#e68c19">Better.</span></span></h2><div class="step-grid"><div class="step"><b>01</b><h3>CALCULATE</h3><p>See how your home uses energy.</p></div><div class="step"><b>02</b><h3>UNDERSTAND</h3><p>See what your results mean.</p></div><div class="step"><b>03</b><h3>CLARIFY</h3><p>Book a call with us for extra guidance.</p></div><div class="step"><b>04</b><h3>CHOOSE</h3><p>Access an installer if elected.</p></div><div class="step"><b>05</b><h3>VERIFY</h3><p>Receive an independent inspection report after your installation is complete.</p></div></div></section>
+<section id="transparency" class="transparency"><div class="number">TRANSPARENCY</div><h2>WHO PAYS US.<br>AND WHAT FOR.</h2><p>If you ask us to make an installer introduction and then proceed with that installer, they will pay Watts Better an introducer fee. Part of that fee funds the independent inspection and report; the rest covers our advice and coordination.</p><p>We do not share your details unless you specifically request us to.</p></section>
+<section id="start" class="chapter blue"><div class="number" style="color:var(--sun)">START</div><h2>START WITH YOUR<br>ENERGY USE.</h2><p>A quick assessment to help you understand your solar and battery options.</p><a class="button" href="/calculator">START ASSESSMENT →</a></section>
+<footer class="footer"><div class="footer-grid"><div class="footer-brand"><div class="logo" data-text="Watts Better"><span class="lw">Watts Better</span></div><p>Independent solar decisions for Queensland homeowners.</p></div><div class="footer-col"><h4>Products</h4><a href="/the-report">The Report</a><a href="/the-calculator">The Calculator</a><a href="/installation-inspections">Installation Inspections</a></div><div class="footer-col"><h4>Company</h4><a href="/about-us">About Us</a><a href="/how-we-are-paid">How We're Paid</a><a href="/how-introductions-work">How Introductions Work</a><a href="/contact-us">Contact Us</a></div><div class="footer-col"><h4>Learn</h4><a href="/blog">Knowledge</a><a href="/tools">Tools</a><a href="/the-industry">The Industry</a></div></div><div class="footline"><span><a href="/privacy">Privacy</a> � <a href="/privacy#terms">Terms</a></span><span>Independent Solar Decisions</span></div></footer>
+<div class="modal" id="modal"><div class="modalbox"><button class="close" onclick="closeAssessment()">×</button><div class="eyebrow">WATTS BETTER · ASSESSMENT</div><div class="progress"><i></i></div><div id="formStage"><h2>LET’S START WITH<br>YOUR HOME.</h2><label for="postcode">Where is it located?</label><input id="postcode" placeholder="Enter suburb or postcode"><label>When does your home use most energy?</label><div class="options"><button class="option" onclick="selectOption(this)">DAYTIME</button><button class="option" onclick="selectOption(this)">EVENING</button><button class="option active" onclick="selectOption(this)">ALL DAY</button></div><label for="email">Where should we send your report?</label><input id="email" type="email" placeholder="Email address"><button class="button" style="margin-top:27px" onclick="showResult()">SHOW MY ENERGY DIRECTION →</button><p class="small">By continuing, you acknowledge that results are indicative only. We will not share your details with an installer unless you expressly request an introduction.</p></div><div id="resultStage" class="result"><div class="eyebrow">YOUR ENERGY DIRECTION</div><h3>SOLAR + BATTERY-READY</h3><p>A strong solar system now, with flexibility to add storage when it makes sense for your household.</p><button class="button" onclick="closeAssessment()">REQUEST MY FULL REPORT →</button></div></div></div>
+<script>function openAssessment(){document.getElementById('modal').classList.add('open');document.body.style.overflow='hidden'}function closeAssessment(){document.getElementById('modal').classList.remove('open');document.body.style.overflow=''}function selectOption(e){document.querySelectorAll('.option').forEach(x=>x.classList.remove('active'));e.classList.add('active')}function showResult(){document.getElementById('resultStage').style.display='block';document.getElementById('formStage').style.display='none'}window.onclick=e=>{if(e.target.id==='modal')closeAssessment()}</script>
+</body></html>
