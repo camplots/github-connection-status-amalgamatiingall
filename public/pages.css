@@ -329,3 +329,26 @@
 .fn-tag{font-size:12px;font-weight:800;letter-spacing:.16em;color:#2849c9}
 .fn-card strong{font-size:20px;line-height:1.2;letter-spacing:-.02em;font-weight:800}
 @media(max-width:960px){.fn-grid{grid-template-columns:1fr;gap:44px}.fn-img{box-shadow:8px 8px 0 #111821!important}}
+
+.watch{background:#f7f1e4;color:#111821;padding:0 7vw clamp(48px,6vw,88px)}
+.watch-inner{max-width:1200px;margin:0 auto;border-top:2px solid #111821;padding-top:clamp(40px,5vw,72px)}
+.watch h2{font-family:'Inter',Arial,sans-serif;font-size:clamp(26px,3.2vw,40px);line-height:1.05;letter-spacing:-.025em;font-weight:800;margin:0 0 14px;text-wrap:balance}
+.watch .ex-lead{margin-bottom:40px}
+.watch-grid{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);gap:clamp(32px,4vw,56px);align-items:start}
+.watch-player{margin:0}
+.watch-frame{position:relative;border:2px solid #111821;box-shadow:12px 12px 0 #ef684b;background:#e9e1f4;line-height:0}
+.watch-frame video{display:block;width:100%;height:auto;aspect-ratio:1440/1056}
+.watch-toggle{position:absolute;left:16px;bottom:16px;display:inline-flex;align-items:center;gap:8px;padding:10px 16px;font:800 12px/1 'Inter',Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;background:#111821;color:#f7f1e4;border:2px solid #111821;cursor:pointer;transition:transform .15s,background .15s,color .15s}
+.watch-toggle:hover{background:#f8cd2a;color:#111821;transform:translate(-2px,-2px)}
+.watch-toggle:focus-visible{outline:3px solid #2849c9;outline-offset:3px}
+.watch-toggle .ic-pause{display:none}
+.watch-toggle.is-playing .ic-play{display:none}
+.watch-toggle.is-playing .ic-pause{display:inline}
+.watch-notes{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.watch-notes li{display:grid;grid-template-columns:44px 1fr;gap:14px;padding:20px 0;border-top:2px solid #111821;font-size:16px;line-height:1.5}
+.watch-notes li:first-child{border-top:0;padding-top:0}
+.watch-notes span{font:900 34px/1 'Inter',Arial,sans-serif;letter-spacing:-.04em;color:#2849c9}
+.watch-notes strong{display:block;font-size:18px;line-height:1.2;letter-spacing:-.02em;font-weight:800;margin-bottom:6px}
+.watch-notes p{margin:0;color:#111821cc}
+.watch-key{margin:36px 0 0;font-size:14px;line-height:1.5;color:#111821b3;max-width:760px}
+@media(max-width:960px){.watch-grid{grid-template-columns:1fr}.watch-frame{box-shadow:8px 8px 0 #ef684b}.watch-notes li:first-child{padding-top:20px;border-top:2px solid #111821}}
