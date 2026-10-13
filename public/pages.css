@@ -352,3 +352,19 @@
 .watch-notes p{margin:0;color:#111821cc}
 .watch-key{margin:36px 0 0;font-size:14px;line-height:1.5;color:#111821b3;max-width:760px}
 @media(max-width:960px){.watch-grid{grid-template-columns:1fr}.watch-frame{box-shadow:8px 8px 0 #ef684b}.watch-notes li:first-child{padding-top:20px;border-top:2px solid #111821}}
+
+/* ---- desktop density: banded editorial pages ---- */
+.cta a.btn,.cta a.btn:hover{color:var(--paper);text-decoration:none}
+@media(min-width:761px){
+body.cols .band{padding:5vw 7vw}
+body.cols .band-in{max-width:1180px}
+body.cols .band .p-sec{margin:0}
+}
+@media(min-width:961px){
+body.cols .band .p-sec:has(>h2){display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1.6fr);column-gap:5vw;align-items:start}
+body.cols .band .p-sec:has(>h2)>h2{grid-column:1;grid-row:1/span 40;position:sticky;top:104px;margin:0;font-size:clamp(26px,2.7vw,40px);line-height:1.05}
+body.cols .band .p-sec:has(>h2)>:not(h2){grid-column:2;min-width:0}
+body.cols .band .p-sec:has(>h2)>p:first-of-type{margin-top:0}
+}
+
+body.cols .band.blue .p-sec h2{color:var(--sun)}
