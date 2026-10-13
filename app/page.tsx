@@ -1,5 +1,6 @@
 import { readFileSync } from "node:fs"
 import path from "node:path"
+import { FlowVideoController } from "@/components/flow-video-controller"
 
 export default function Home() {
   const source = readFileSync(path.join(process.cwd(), "public", "index.html"), "utf8")
@@ -11,6 +12,7 @@ export default function Home() {
     <>
       <style dangerouslySetInnerHTML={{ __html: styles }} />
       <div dangerouslySetInnerHTML={{ __html: content }} />
+      <FlowVideoController />
     </>
   )
 }
