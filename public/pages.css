@@ -161,3 +161,20 @@
 }
 
 @media(max-width:480px){.steps4{grid-template-columns:1fr}}
+
+
+.examples{background:#ede6d7;color:#110e2a;padding:0 7vw 10vw}
+.examples-inner{max-width:1200px;margin:0 auto;border-top:2px solid #110e2a;padding-top:6vw}
+.ex-kicker{font-size:12px;font-weight:800;letter-spacing:.16em;margin:0 0 18px;color:#ee438f}
+.examples h2{font-family:'Inter',Arial,sans-serif;font-size:clamp(28px,3.4vw,44px);line-height:1.05;letter-spacing:-.025em;font-weight:800;margin:0 0 18px;text-wrap:balance}
+.ex-lead{font-size:20px;line-height:1.6;max-width:640px;margin:0 0 48px}
+.ex-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px;align-items:start}
+.ex-card{margin:0}
+.ex-img{display:block;border:2px solid #110e2a;box-shadow:12px 12px 0 #110e2a;background:#110e2a;line-height:0}
+.ex-light .ex-img{box-shadow:12px 12px 0 #ee438f}
+.ex-img img{display:block;width:100%;height:auto}
+.ex-img:focus-visible{outline:3px solid #ee438f;outline-offset:4px}
+.ex-card figcaption{display:flex;flex-direction:column;gap:8px;margin-top:36px;font-size:17px;line-height:1.55}
+.ex-tag{font-size:12px;font-weight:800;letter-spacing:.16em}
+.ex-card strong{font-size:22px;line-height:1.2;letter-spacing:-.02em;font-weight:800}
+@media(max-width:860px){.ex-grid{grid-template-columns:1fr;gap:56px}.ex-lead{font-size:18px}.ex-img,.ex-light .ex-img{box-shadow:8px 8px 0 #110e2a}.ex-light .ex-img{box-shadow:8px 8px 0 #ee438f}}

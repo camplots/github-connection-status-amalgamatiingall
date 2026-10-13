@@ -17,7 +17,7 @@
 .nav .logo{font-size:26px}.footer .logo{font-size:28px}@media (max-width:700px){.nav .logo{font-size:21px}.footer .logo{font-size:24px}}
 .nav .logo{font-size:40px;margin-left:3vw}
 .hero-copy{padding:20vh 7vw 12vh 12vw}
-.hero h1 .sun-word{color:#febe79}
+.hero h1 .sun-word{color:#f3f849}
 @media (max-width:700px){.nav .logo{font-size:28px;margin-left:2vw}.hero-copy{padding:17vh 7vw 12vh 10vw}}
 .hero h1 .ln{display:block;white-space:nowrap}
 .hero h1{font-size:clamp(56px,8.4vw,132px);line-height:1.02}
@@ -56,14 +56,14 @@
 
 /* palette roles: flat colours only */
 :root{--ink:#110e2a;--paper:#ede6d7;--muted:#110e2a}
-.hero{background:#110e2a;color:#ede6d7}
-.hero .sun{background:#f3f849;opacity:1}
-.hero .house{background:#ee438f}
-.hero .roof{background:#febe79}
-.hero .panel{border:2px solid #110e2a;background:repeating-linear-gradient(90deg,#f3f849 0 22%,#110e2a 23% 26%)}
+.hero{background:linear-gradient(180deg,#110e2a 0%,#ee438f 58%,#febe79 100%);color:#ede6d7}
+.hero .sun{background:radial-gradient(circle at 42% 40%,#ffffff 0 5%,#f3f849 20%,#febe79 62%,#ee438f 100%);box-shadow:0 0 120px 50px #febe79;opacity:1}
+.hero .house{background:#110e2a}
+.hero .roof{background:#ee438f}
+.hero .panel{border:1px solid #f3f849;background:repeating-linear-gradient(90deg,#f3f849 0 22%,#110e2a 23% 26%)}
 .hero h1 .sun-word{color:#febe79}
 .hero .button{background:#f3f849;color:#110e2a}
-.hero .button:hover{background:#ee438f;color:#110e2a}
+.hero .button:hover{background:#ede6d7;color:#110e2a}
 .nav{color:#ede6d7;border-bottom:1px solid #ede6d7}
 .nav .logo,.footer .logo{color:#ede6d7}
 .logo::before{text-shadow:.1em .13em 0 #ee438f}
